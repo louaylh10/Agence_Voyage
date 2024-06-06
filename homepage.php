@@ -1,11 +1,7 @@
 <?php
 session_start();
-try {
-   $pdo =new PDO('mysql:host=localhost;dbname=agence_voyage;charset=utf8', 'root', '');
- } catch (PDOException $e) {
-   echo "Erreur de connexion : " . $e->getMessage();
-   exit();
- }
+include "connect.php";
+
 $email=$_SESSION["email"];
 $stmt = $pdo->prepare("SELECT SUM(nb_tickets) as nbrs FROM reservations  WHERE id_user=:id");
 $stmt->bindParam(':id', $_SESSION["id"]);

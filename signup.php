@@ -1,11 +1,6 @@
 <?php
+include "connect.php";
 
-try {
-    $db = new PDO('mysql:host=localhost;dbname=agence_voyage;charset=utf8', 'root', '');
-    
-} catch (Exception $e) {
-    die('Erreur : ' . $e->getMessage());
-}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nom = $_POST['nom'];
@@ -14,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pwd = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
     
     $query = "SELECT * FROM user WHERE email = :email";
-    $stmt = $db->prepare($query);
+    $stmt = $pdo->prepare($query);
     $stmt->bindParam(':email', $email);
     $stmt->execute();
 
@@ -23,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;}
         else{
 
-         $stmt = $db->prepare("INSERT INTO user (name, email, phone_number, password) VALUES (:nom, :email, :numb, :pwd)");
+         $stmt = $pdo->prepare("INSERT INTO user (name, email, phone_number, password) VALUES (:nom, :email, :numb, :pwd)");
          $stmt->bindParam(':nom', $nom);
          $stmt->bindParam(':email', $email);
          $stmt->bindParam(':numb', $numb);

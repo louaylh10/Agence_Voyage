@@ -1,13 +1,7 @@
 
 <?php
 session_start();
-try {
-    $pdo =new PDO('mysql:host=localhost;dbname=agence_voyage;charset=utf8', 'root', '');
-} catch (PDOException $e) {
-    echo "Erreur de connexion : " . $e->getMessage();
-    exit();
-}
-
+include "connect.php";
 
 $email = $_POST['email'];
 $password = $_POST['pwd'];

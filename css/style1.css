@@ -1,0 +1,166 @@
+.rsv {
+    width: 60%;
+    border-radius: 8px;
+    padding: 3rem;
+    background:linear-gradient(to right,#022739,#077f9b);
+    box-shadow: 0 6px 16px 0 hsla(270, 30%, 3%, .4);
+    margin-left: auto;
+    position: fixed;
+left: 20%;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+  z-index: 0;
+  height: 300px;
+  }
+  .rsv .quit{
+    position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: ease-in-out 0.15s;
+  }
+  .rsv .logo{
+    position: relative;
+    top:70%;
+    left:0px;
+   
+    width: 100px;
+    height:100px;
+  }
+  .rsv .logo img{
+    position: absolute;
+   left: 0;
+   top: 0;
+  }
+  .rsv .logo img
+  .rsv .quit:hover{
+    color: #FFD111;
+  }
+  .rsv input{
+    margin-left: 30px;
+    padding: 6px;
+    background-color: transparent ;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+  }
+  .trvls::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+
+    left: 160px;
+    border-left: 10px solid transparent; /* La moitié de la largeur du triangle */
+    border-right: 10px solid transparent; /* La moitié de la largeur du triangle */
+    border-bottom: 18px solid #FFD111; /* Hauteur du triangle */
+    z-index: 5;
+  }
+  
+  .trvls {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    background-color: #fbfbfb;
+   min-width: 300px;
+    padding-bottom: 50px;
+    z-index: 3;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.15s ease-in-out;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+ .trvls table td{
+  text-align: center;
+padding-top: 10px; 
+}
+.trvls table tr:nth-child(odd){
+  background-color: #0227391d;
+ }
+ .trvls table tr:nth-child(even){
+  background-color: #ffcf113d;
+ }
+ .trvls table th{
+  padding-left: 10px;
+background-color: #fff;
+ }
+ .trvls table td{
+  font-size: 14px;
+  color: black;
+ }
+  .trvls .list_title{
+    width: 100%;
+    text-align: center;
+    background:linear-gradient(to right,#022739,#077f9b);
+    background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .nbrs {
+    cursor: pointer;
+  }
+    
+  .rsv button{
+    padding: 15px;
+  position: absolute;
+  left:80%;
+  top: 80%;
+    font-size: 12px;
+    border-radius: 50px;
+    background:linear-gradient(to right,#022739,#077f9b);
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+  }
+ 
+  .rsv button:hover{
+    background: #FFD111;
+    color: #022739;
+  }
+.rsv img{
+    width: 30%;
+    position:absolute;
+    left:69%;
+    top: 10%;
+
+}  
+.reserver{
+  padding: 15px;
+  font-size: 12px;
+  border-radius: 50px;
+  background:linear-gradient(to right,#022739,#077f9b);
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+.reserved{
+  padding: 15px;
+  font-size: 12px;
+  border-radius: 50px;
+  background:#FFD111;
+  font-weight: bold;
+  color: #022739;
+  border: none;
+  transition: 0.15s ease-in-out;
+  cursor:auto;
+}
+.main .reserver,.main .reserved{
+  padding: 20px;
+  font-size: 20px;
+
+}
+.reserver:hover{
+  background: #FFD111;
+  color: #022739;
+}

@@ -1,0 +1,94 @@
+.delete{
+    cursor: pointer;
+    color:red;
+    transition: 0.15s ease-in-out;
+    }
+    
+    .options{
+      position: absolute;
+      font-size: 20px;
+      left: 750px;
+      top: 5px;
+    }
+    .bk{
+        margin-left: 20px;
+    }
+    .bk:hover ,.delete:hover{
+      color: #FFD111;
+    }
+    .trvls{
+      z-index: 6;
+    }
+    
+    .options div{
+      display: inline-block;
+    cursor: pointer;
+    }
+    
+.list_bking {
+    width: 70%;
+    border-radius: 8px;
+    padding: 3rem;
+    background:linear-gradient(to right,#022739,#077f9b);
+    box-shadow: 0 6px 16px 0 hsla(270, 30%, 3%, .4);
+    margin-left: auto;
+    position: fixed;
+    top:20%;
+  left: 15%;
+  min-height: 400px;
+  transition: ease-in-out 0.5s;
+display: none;
+z-index:20;
+  }
+  .list_bking-heading-wrap {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+   
+  }
+  
+  .list_bking .list_bking-heading {
+    flex-grow: 2;
+    margin-top: 16%;  
+}
+
+  
+.list_bking .quit1{
+    position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: ease-in-out 0.15s;
+  }
+  .list_bking .quit1:hover{
+    color: #FFD111;
+  }
+  .list_bking .list_bking-heading,.list_bking .listec{
+    display: inline-block;
+  }
+  .list_bking .listec{
+
+    margin-left: 30px;
+    height: 78%;
+    width: 80%;
+    position: absolute;
+  }
+  .listec table{
+    width: 100%;
+    
+    color:#fff;
+  }
+  .listec table th{
+    font-size: 20px;
+  }
+  .listec table tr:nth-child(even){
+    background-color: #077f9b;
+  }
+  .listec table td{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  

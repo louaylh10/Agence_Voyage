@@ -11,7 +11,7 @@ $query = $pdo->prepare("SELECT * FROM user WHERE email = :email");
 $query->execute(array(':email' => $email));
 $user = $query->fetch(PDO::FETCH_ASSOC);
 if($email=="TR_ADMIN@trvl.com" && $password=="12345678912"){
-echo "Hello Adminstrator.";
+echo "Hello Adminstrator";
 }
 else if ($user && password_verify($password, $user['password'])) {
     echo "Successful connection";
